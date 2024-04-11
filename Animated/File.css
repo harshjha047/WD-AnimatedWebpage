@@ -17,6 +17,7 @@ html,body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 #page1 h1{
     font-size: 8.5vw;
@@ -142,6 +143,7 @@ nav button svg{
     animation-duration: 9s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    color: #fff;
 }
 .move img{
     height: 2vw;
