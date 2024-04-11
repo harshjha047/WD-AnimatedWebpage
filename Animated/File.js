@@ -30,8 +30,8 @@ document.querySelector("nav").addEventListener("mouseleave",function(){
         height:0,
         duration:0.2
     })})
-};navAnimation();
-
+};
+// navAnimation();
 function page2Animation(){
     let rightelem = document.querySelectorAll(".right-elem");
 
@@ -58,7 +58,25 @@ rightelem.forEach(function(elem){
 
 };
 page2Animation();
+function page3Animation(){
+var p3center= document.querySelector(".page3-center")
+var video =document.querySelector("#page3 video")
 
-
-
-
+p3center.addEventListener("click",function(){
+    video.play();
+    gsap.to(video,{
+        transform:"scaleX(1) scaleY(1)",
+        opacity:1,
+        borderRadius:0
+    })
+})
+video.addEventListener("click",function(){
+    video.load();
+    gsap.to(video,{
+        transform:"scaleX(0.7) scaleY(0)",
+        opacity:0,
+        borderRadius:"30px"
+    })
+})
+}
+page3Animation();
