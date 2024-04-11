@@ -28,14 +28,16 @@ html,body{
     height: 6vw;
     width: 6vw;
     border-radius: 4vw;
+    margin: 0vw;
     background-color: #4D9D5B;
     rotate: 0deg;
-    transition: width 0.5s, height 0.5s, rotate 0.5s;
+    transition: all ease 0.5s;
 }
 #page1 h1 svg:hover{
     height: 5vw;
     width: 5vw;
     rotate: -20deg;
+    margin: 0.5vw;
 }
 #page1 p{
     text-align: center;
@@ -81,7 +83,6 @@ nav h1,nav button{
     position: relative;
     z-index: 99;
 }
-
 #nav-bottom{
     background-color:#111;
     height: 0vh;
@@ -182,8 +183,8 @@ nav button svg{
     display: flex;
     align-items: center;
     /* border-top: 1px solid #333; */
-    justify-content: space-between}
-
+    justify-content: space-between
+}
 #page2-left{
     height: 100%;
     width: 40%;
@@ -197,14 +198,11 @@ nav button svg{
     font-size: 1.2vw;
     font-weight: 400;
 }
-
 #page2-left h5{
     font-size: 1.1vw;
     width: 75%;
     font-weight: 400;
 }
-    
-
 #page2-right{
     height: 100%;
     width: 53%;
@@ -228,4 +226,120 @@ nav button svg{
     opacity: 0;
     object-fit: cover;
     scale: 0;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url("https://deep-image.ai/blog/content/images/2022/09/underwater-magic-world-8tyxt9yz.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page3-center{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    cursor: pointer;
+}
+.page3-center .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.page3-center .icon i{
+    color: #111;
+    font-size: 3vw;
+}
+.page3-center h5{
+    font-size: 0.7vw;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+    margin-top: 0.7vw;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    color: #111;
+    font-weight: 700;
+    transform: translateY(10%);
+    transition: all ease 0.7s;
+    opacity: 0;
+}
+.page3-center:hover h5{
+    opacity: 1;
+    transform: translateY(0%);
+}
+#page3 video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0);
+    opacity: 0;
+    border-radius: 30px;
+    z-index: 999;
+}
+#page4{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 13vh;
+}
+.section{
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13vh 10vw;
+    padding-bottom: 0;
+}
+.sec-left{
+    height: 100%;
+    width: 25%;
+    padding-top: 3vh;
+    /* background-color: aqua; */
+    border-top: 2px solid #000;
+}
+.sec-left h2{
+    font-size: 2.1vw;
+    font-weight: 500;
+    color: #000;
+}
+.sec-left p{
+    color: #000;
+    margin-top: 5vh;
+    font-size: 1.2vw;
+    /* width: 80%; */
+}
+.sec-right{
+    height: 100%;
+    width: 70%;
+    background-color: blanchedalmond;
+    position: relative;
+}
+.sec-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sec-right video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity ease 0.1s;
 }
