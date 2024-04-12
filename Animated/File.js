@@ -1,3 +1,4 @@
+
 function locomotiveAnimation() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -66,7 +67,7 @@ function navAnimation() {
         let tl = gsap.timeline()
 
         tl.to("#nav-bottom", {
-            height: "20vh",
+            height: "17vh",
             duration: 0.5
         })
         tl.to(".nav-part2 h5", {
@@ -167,6 +168,8 @@ function page3VideoAnimation() {
     })
 
 }
+
+
 
 
 locomotiveAnimation()
